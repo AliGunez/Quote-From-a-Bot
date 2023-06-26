@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(71, 71, 71);
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(228, 228, 228);
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 720;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    padding: 35px;
+}
+
+main {
+    text-align: center;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(4, 112px);
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+
+
+.character img{
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.loading {
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(153, 153, 255, 0.13);
+}
+
+.loading img {
+    max-width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.model {
+    background-color: grey;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 24px;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 512px;
+    border: 3px solid black;
+}
+
+
+
+.model-content {
+    padding: 16px;
+}
+
+.model-close {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 12px;
+    right: 12px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.26);
+    cursor: pointer;
+
+}
